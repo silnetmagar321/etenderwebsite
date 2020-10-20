@@ -1,0 +1,14 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+{{object}}
+
+{% if object is not None  %}
+           <h3>{{ object.title }}</h3>
+            <div class="row">
+
+            </div>
+{% else %}
+<p>Please make payment through esewa or bank or personally in our address to view all the tenders.</p>
+{% endif %}
+{% endblock %}

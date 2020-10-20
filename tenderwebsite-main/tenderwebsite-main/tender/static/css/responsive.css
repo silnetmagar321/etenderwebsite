@@ -1,0 +1,186 @@
+@media (min-width: 1200px) {
+#sidebar {
+margin-left: 2px;
+    display:inline-block;
+    color: red;
+    width:100%;
+}
+
+.horizontal-sidebar{
+text-align:center;
+    margin: 2px 5px 0px 22px;
+}
+.horizontal-sidebar .btn{
+    margin-right: 1%;
+    margin-bottom: 12px;
+}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .eh1{
+           background:orange;
+           color: orange;
+           font-size: 22px;
+        }
+    .navbar {
+        padding: 2px 22px;
+        font-size: 16px;
+    }
+    .navbar li {
+    }
+
+#sidebar {
+    margin-left: 0px;
+    display:inline-block;
+    color: black;
+    width:100%;
+}
+
+.horizontal-sidebar{
+text-align:center;
+    margin: 2px 5px 0px 22px;
+}
+.horizontal-sidebar .btn{
+    margin-right: 1%;
+    margin-bottom: 12px;
+}
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+.list-group li {
+font-size: 16px;
+}
+#sidebar {
+    margin-left: 0px;
+    display:inline-block;
+    color: black;
+    width:100%;
+
+}
+
+
+#slideshow{
+margin: 5px 2px;
+padding-right:8px;
+}
+
+.slideshow{
+padding:0px 12px 0px 2px;
+width:50%;
+}
+card-deck > .card
+    {
+        height: 60%;
+        width: 100%;
+        flex-wrap: wrap;
+        flex: initial;
+    }
+
+
+.horizontal-sidebar{
+    margin: 2px 5px 0px 22px;
+}
+.horizontal-sidebar .btn{
+    margin-right: 28px;
+    margin-bottom: 12px;
+}
+
+
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px) {
+
+#slideshow{
+margin :5px 0px;
+padding-right:2px;
+
+}
+.slideshow{
+width: 100%;
+height: 250px;
+}
+
+#sidebar {
+text-align:center;
+    margin: 0px 0px;
+    display:inline-block;
+    color: black;
+    width:100%;
+}
+.alert {
+font-size: 14px;
+}
+
+.horizontal-sidebar{
+    margin: 2px 5px 0px 22px;
+}
+.horizontal-sidebar .btn{
+    margin-right: 18px;
+    margin-bottom: 12px;
+}
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 423px) {
+
+#slideshow{
+text-align:center;
+margin :5px 2px;
+padding-left:5px;
+padding-right:5px;
+
+}
+
+.slideshow{
+width: 100%;
+height: 250px;
+}
+#sidebar {
+    margin-left: 2px;
+    display:inline-block;
+    color: black;
+    width:100%;
+}
+
+.alert h2{
+text-align:center;
+
+font-size: 20px;
+padding: 6px 0px 0px 00px;
+}
+.card-body h5{
+font-size: 18px;
+}
+#footer_stack{
+font-size: 14px;
+
+}
+#footer_stack h3{
+font-size: 18px;
+
+}
+#footer_stack h4{
+    font-size: 16px;
+    display:inline-block;
+
+}
+#footer_stack li h5{
+font-size: 16px;
+}
+
+.horizontal-sidebar{
+    margin: 2px 5px 0px 42px;
+    display:inline-block;
+    width: 100%;
+     btn: btn-block;
+}
+.horizontal-sidebar .btn{
+    margin-bottom: 8px;
+}
+
+
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'advertise/ad_home_top.html' %}
+
+{% include 'tenderapp/snippets/slideshow.html' %}
+{% include 'tenderapp/snippets/horizontal-sidebar.html' %}
+
+<div class="all_html">
+{% include 'tenderapp/snippets/tender.html' %}
+</div>
+<hr>
+{% include 'abouttender.html' %}
+<hr>
+{% include 'howdoes.html' %}
+<hr>
+{% include 'howtouse.html' %}
+<hr>
+{% include 'benefits.html' %}
+
+{% include 'advertise/ad_home_bottom.html' %}
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  {% if user.is_authenticated%}
+
+{% include 'tenderapp/snippets/horizontal-sidebar.html' %}
+<br>
+<div class="card-group">
+                {% for t in auction %}
+                <div class="col-sm-12 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card">
+                            {% if t.picture %}
+                            <a href="{% url 'others:single' t.slug %}">
+                                <img src="{{t.picture.url}}" class="card-img-top" alt="...">
+                            </a>
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{t.title}}</h5>
+                                <p class="card-text">{{t.org_name}}</p>
+                                <p class="card-text"><i class="fa fa-briefcase" aria-hidden="true"></i>{{t.service}}</p>
+                            <p class="card-text"><i class="fa fa-newspaper-o" aria-hidden="true"></i>{{t.published_on}}</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Published Date: {{t.published_date|date}}</li>
+                                <li class="list-group-item">Last Date: {{t.last_date|date}}</li>
+                            </ul>
+                            <a href="{% url 'others:single' t.slug %}" class="btn btn-primary card-footer">Visit Tender/Notice</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+
+ {% else %}
+    <div class="alert alert-success" role="alert">
+        <h3 class="alert-heading">Login Required!</h3>
+        <p>Please signup to view this document. to register, click the login button from the above and click the option register here.</p>
+
+        <hr>
+        <p class="mb-0">See you soon!</p>
+    </div>
+    {% endif %}
+    <br><br><br><br><br><br><br>
+{% include 'singlead/singlebottom.html' %}
+
+{% endblock %}
